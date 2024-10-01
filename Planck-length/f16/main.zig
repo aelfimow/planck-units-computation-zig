@@ -13,7 +13,7 @@ pub fn main() void {
     print("Gravitational constant (f16) = {}\n", .{G});
     print("Speed of light (f16) = {}\n", .{c});
 
-    const lp: f16 = std.math.sqrt((h_reduced * G) / std.math.pow(f32, c, 3.0));
+    const lp: f16 = std.math.sqrt((h_reduced * G) / (c * c * c));
 
     print("Planck length (f16) = {}\n", .{lp});
 }
