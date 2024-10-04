@@ -15,5 +15,8 @@ pub fn main() void {
 
     const lp: f64 = std.math.sqrt((h_reduced * G) / std.math.pow(f64, c, 3.0));
 
-    print("Planck length (f64) = {}\n", .{lp});
+    const lp2: f64 = std.math.sqrt((h_reduced * G) / (c * c * c));
+
+    print("Planck length (f64, method 1) = {}\n", .{lp});
+    print("Planck length (f64, method 2) = {}\n", .{lp2});
 }
