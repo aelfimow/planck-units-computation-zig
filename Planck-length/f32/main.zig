@@ -15,5 +15,8 @@ pub fn main() void {
 
     const lp: f32 = std.math.sqrt((h_reduced * G) / std.math.pow(f32, c, 3.0));
 
-    print("Planck length (f32) = {}\n", .{lp});
+    const lp2: f32 = std.math.sqrt((h_reduced * G) / (c * c * c));
+
+    print("Planck length (f32, method 1) = {}\n", .{lp});
+    print("Planck length (f32, method 2) = {}\n", .{lp2});
 }
